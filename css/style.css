@@ -41,8 +41,14 @@ h6 {
 }
 
 a {
+    color: white;
     text-decoration: none !important;
     outline: none;
+}
+
+a:hover {
+    color: white;
+    opacity: 0.7;
 }
 
 p {
@@ -960,6 +966,14 @@ textarea.form-control {
     transition: all 0.5s;
 }
 
+
+.footer-list {
+    list-style-type: none;
+}
+
+.footer-list {
+    padding-inline-start: 0px ;
+}
 .footer-link a:hover {
     color: #fff;
 }

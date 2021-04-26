@@ -202,8 +202,7 @@ $(".element").each(function() {
 });
 
 // SWIPER SLIDER
-var swiper = new Swiper('.swiper-container', {
-    // effect: 'coverflow',
+var swiper = new Swiper('.swiper1', {
     loop: true,
     centeredSlides: true,
     slidesPerView: 1,
@@ -223,4 +222,30 @@ var swiper = new Swiper('.swiper-container', {
         slideShadows: false,
         slidesPerView: 3,
     }
+})
+
+var industrySwiper = new Swiper('.swiper2', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 5,
+    initialSlide: 1,
+    keyboardControl: true,
+    mousewheelControl: false,
+    lazyLoading: true,
+    preventClicks: false,
+    preventClicksPropagation: false,
+    lazyLoadingInPrevNext: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    coverflow: {
+        rotate: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: false,
+        slidesPerView: 3,
+    },
+    autoplay: {
+        delay: 5000,
+    },
+    speed: 2800
 })
