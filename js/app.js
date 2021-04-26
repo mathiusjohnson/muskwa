@@ -203,11 +203,11 @@ $(".element").each(function() {
 
 // SWIPER SLIDER
 var swiper = new Swiper('.swiper-container', {
-    effect: 'coverflow',
+    // effect: 'coverflow',
     loop: true,
     centeredSlides: true,
-    slidesPerView: 2,
-    initialSlide: 3,
+    slidesPerView: 1,
+    initialSlide: 1,
     keyboardControl: true,
     mousewheelControl: false,
     lazyLoading: true,

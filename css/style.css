@@ -835,7 +835,7 @@ button:focus {
 
 .agency-blog-date {
     position: relative;
-    background-color: #323232;
+    /* background-color: #323232; */
     display: inline-block;
     bottom: 40px;
     border-radius: 3px;
