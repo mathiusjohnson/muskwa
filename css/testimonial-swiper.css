@@ -30,10 +30,33 @@
   background-image: ur;
   position: absolute;
 } */
-.swiper-button-prev {
-  left: -25px;
+.yellow-circle-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #efc169;
+  border-radius: 9999px;
+  color: white;
 }
 
-.swiper-button-next {
-  right: -25px;
+.swiper-arrow-left {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  left: -85px;
+  font-size: 2rem;
+}
+
+.swiper-arrow-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  right: -85px;
+  font-size: 2rem;
 }
