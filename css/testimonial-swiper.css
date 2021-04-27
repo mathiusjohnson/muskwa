@@ -6,7 +6,6 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* background: #164451; */
   color: white;
   padding: 75px;
   border-radius: 25px;
@@ -59,4 +58,29 @@
   cursor: pointer;
   right: -85px;
   font-size: 2rem;
+}
+
+
+@media (min-width: 200px) and (max-width: 991px) {
+  .swiper-slide {
+    padding: 30px 0;
+  }
+
+  .yellow-circle-bg {
+    width: 40px;
+    height: 40px;
+
+  }
+
+  .swiper-arrow-left {
+    bottom: 0%;
+    left: 20px;
+    font-size: 1.5rem;
+  }
+
+  .swiper-arrow-right {
+    bottom: 0%;
+    right: 20px;
+    font-size: 1.5rem;
+  }
 }

@@ -221,13 +221,31 @@ var swiper = new Swiper('.swiper1', {
         modifier: 1,
         slideShadows: false,
         slidesPerView: 3,
-    }
+    },
+
 })
 
 var industrySwiper = new Swiper('.swiper2', {
     loop: true,
-    centeredSlides: true,
     slidesPerView: 5,
+    breakpoints: {
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 8
+        },
+        960: {
+          slidesPerView: 3,
+          spaceBetween: 8
+        },
+        720: {
+          slidesPerView: 2,
+        },
+
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 2
+        }
+    },
     initialSlide: 1,
     keyboardControl: true,
     mousewheelControl: false,
@@ -247,7 +265,8 @@ var industrySwiper = new Swiper('.swiper2', {
     autoplay: {
         delay: 5000,
     },
-    speed: 2800
+    speed: 2800,
+
 })
 
 
@@ -275,7 +294,6 @@ function isScrolledIntoView(elem) {
 
 $(window).scroll(function () {
     $('.highlight').each(function () {
-        console.log('fun is scrolled!!!');
         if (isScrolledIntoView(this) === true) {
             $(this).addClass('highlight-transition');
         }
