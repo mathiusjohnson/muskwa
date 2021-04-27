@@ -1,0 +1,10 @@
+
+.fun {
+  background-image: linear-gradient(to right, mint 50%, yellow 50%);
+  background-position: 0;
+  background-size: 200%;
+  transition: all 0.4s;
+}
+.fun:hover {
+  background-position: -100%;
+}

@@ -103,6 +103,7 @@ button:focus {
 }
 
 .vertical-content {
+    height: 500px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox;
@@ -146,6 +147,35 @@ button:focus {
 .mr-6 {
     margin-right: 12rem;
 }
+
+
+
+.fun {
+    display: block;
+    background: linear-gradient(to right, #efc169 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+/* Make the animation run back and forth */
+}
+
+.fun:hover {
+    background-position: left bottom; 
+}
+  
+  @keyframes highlight {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+  
+    50% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+  }
+
 /**** BUTTON-CODE *****/
 
 .btn {
@@ -606,10 +636,15 @@ button:focus {
 }
 
 
-  .softwere-home-content h1 {
+.softwere-home-content h1 {
     font-size: 5rem;
-  }
+}
 
+.softwere-home-img {
+    position: absolute;
+    z-index: 20;
+    top: -263px;
+}
 /*=============================
  4.   AGENCY-CSS
 ===============================*/
