@@ -49,22 +49,22 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
         <div class="container-fluid mx-4">
             <a class="navbar-brand logo text-uppercase" href="index.html">
-                    <img src="images/Artboard/muskwa-logo.png" class="" alt="" height="80">
+                    <img src="images/Artboard/muskwa-logo.png" class="" alt="" width="">
                 </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="mdi mdi-menu"></i>
             </button>
-            <div>
-                <div class="d-flex justify-content-end">
+            <!-- <div> -->
+                <!-- <div class="d-none d-lg-flex justify-content-end">
                     <a href="#" class="btn btn-custom mr-1">Free Consultation</a>
                     <a href="tel:778-880-2779" class="btn btn-custom mr-1">778-880-2779</a>
                     <a href="#" class="btn btn-custom-red">Help Center</a>
-                </div>
+                </div> -->
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                            <div class="dropdown-menu">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#about" aria-controls="about" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                            <div class="dropdown-menu" id="about">
                                 <a class="dropdown-item" href="#"></a>
                                 <a class="dropdown-item" href="#"></a>
                                 <a class="dropdown-item" href="#"></a>
@@ -72,8 +72,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Networking</a>
-                            <div class="dropdown-menu">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#networking" aria-controls="networking" role="button" aria-haspopup="true" aria-expanded="false">Networking</a>
+                            <div class="dropdown-menu" id="networking">
                                 <a class="dropdown-item" href="#"></a>
                                 <a class="dropdown-item" href="#"></a>
                                 <a class="dropdown-item" href="#"></a>
@@ -81,8 +81,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Security</a>
-                            <div class="dropdown-menu">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#security" aria-controls="security" role="button" aria-haspopup="true" aria-expanded="false">Security</a>
+                            <div class="dropdown-menu" id="security">
                                 <a class="dropdown-item" href="#"></a>
                                 <a class="dropdown-item" href="#"></a>
                                 <a class="dropdown-item" href="#"></a>
@@ -90,8 +90,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cloud Services</a>
-                            <div class="dropdown-menu">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#cloudservices" aria-controls="cloudservices" role="button" aria-haspopup="true" aria-expanded="false">Cloud Services</a>
+                            <div class="dropdown-menu" id="cloudservices">
                                 <a class="dropdown-item" href="#"></a>
                                 <a class="dropdown-item" href="#"></a>
                                 <a class="dropdown-item" href="#"></a>
@@ -99,8 +99,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Asset Management</a>
-                            <div class="dropdown-menu">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-toggle="#assetmanagement" aria-controls="assetmanagement" role="button" aria-haspopup="true" aria-expanded="false">Asset Management</a>
+                            <div class="dropdown-menu" id="assetmanagement">
                                 <a class="dropdown-item" href="#"></a>
                                 <a class="dropdown-item" href="#"></a>
                                 <a class="dropdown-item" href="#"></a>
@@ -108,8 +108,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support &amp; Recovery</a>
-                            <div class="dropdown-menu">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-toggle="#support" aria-controls="support" role="button" aria-haspopup="true" aria-expanded="false">Support &amp; Recovery</a>
+                            <div class="dropdown-menu" id="support">
                                 <a class="dropdown-item" href="#"></a>
                                 <a class="dropdown-item" href="#"></a>
                                 <a class="dropdown-item" href="#"></a>
@@ -122,7 +122,12 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            <!-- </div> -->
+            <!-- <div class="d-flex d-lg-none flex-column justify-content-end">
+                <a href="#" class="btn btn-custom mr-1">Free Consultation</a>
+                <a href="tel:778-880-2779" class="btn btn-custom mr-1">778-880-2779</a>
+                <a href="#" class="btn btn-custom-red">Help Center</a>
+            </div> -->
         </div>
     </nav>
     <!-- Navbar End -->
@@ -137,7 +142,7 @@
                         <div class="col-lg-6">
                             <div class="softwere-home-content text-white mt-4">
                                 <div class="col-lg-8">
-                                    <h1 id="typewriter" class="softwere-home-title text-uppercase line-height_1_4 letter-spacing_4">Smarter Solutions</h1>
+                                    <h1 id="typewriter" class=" text-uppercase line-height_1_4 letter-sp2cing_4">Smarter Solutions</h1>
                                 </div>
 
                                 <!-- <div class="softwere-home-watch-video mt-5">
@@ -178,7 +183,7 @@
                     <div class="home-title text-center">
                         <p class="text-uppercase text-custom-yellow font-weight-bold">Business Tech Headaches?</p>
                         <div class="d-flex justify-content-center">
-                            <h2 class="home-title-title letter-spacing_4 text-uppercase highlight">Muskwa Makes It Better</h2>
+                            <h2 class=" letter-spacing_2 text-uppercase highlight">Muskwa Makes It Better</h2>
                         </div>
                         <p class="home-title-desc text-muted mt-4">Aliquam ut ex at turpis egestas elementum eu sed mi. Curabitur egestas justo sed dictum aliquam. Vivamus ultrices sem sed nulla dignissim, eu posuere velit iaculis. Duis ac tristique nunc. Nunc aliquet eget erat non tristique. Integer eleifend dignissim nisl, ut facilisis elit luctus eu. Duis sit amet molestie nunc.                    </p>
                         <p class="home-title-desc text-muted mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate aliquet nisl et scelerisque. Cras quis dignissim nisi. Sed consectetur ullamcorper elit, non luctus magna maximus sed. Integer commodo sem eu vestibulum congue. Cras finibus massa non tempor congue. Sed velit sem, lobortis ac nibh sed, vehicula malesuada tortor. Nullam commodo, lectus eget faucibus auctor, sapien eros tincidunt mi, ut placerat turpis tortor ac diam. Ut feugiat porta arcu, quis maximus neque maximus a. Etiam sollicitudin urna nunc, vel molestie elit cursus nec. Cras nec turpis non mi tempus malesuada. Pellentesque placerat arcu id lectus consectetur dictum. Praesent porta quis est et ullamcorper. Nam ac enim hendrerit, consectetur lorem sit amet, congue neque.
@@ -200,7 +205,7 @@
                 <div class="col-lg-8">
                     <div class="home-title text-center">
                         <div class="d-flex justify-content-center">
-                            <h2 class="home-title-title letter-spacing_4 text-uppercase highlight">What We Do</h2>
+                            <h2 class=" letter-spacing_2 text-uppercase highlight">What We Do</h2>
                         </div>
                         <p class="home-title-desc text-muted mt-4">Aliquam ut ex at turpis egestas elementum eu sed mi. Curabitur egestas justo sed dictum aliquam. Vivamus ultrices sem sed nulla dignissim, eu posuere velit iaculis. Duis ac tristique nunc. Nunc aliquet eget erat non tristique. Integer eleifend dignissim nisl, ut facilisis elit luctus eu. Duis sit amet molestie nunc.</p>
                     </div>
@@ -348,7 +353,7 @@
                                 <i class="fal fa-rocket fa-2x text-white icon-element"></i>
                             </div>
                         </div>
-                        <h3 class="mb-4 text-uppercase f-22 text-light letter-spacing_2">Forward Thinking</h3>
+                        <h3 class="mb-4 text-uppercase f-22 text-light letter-spacing_2">For2ard Thinking</h3>
                         <div class="d-flex justify-content-center">
                             <p class="text-light w-lg-50" >We have unique solutions for your company to reach its goals for today and tomorrow</p>
                         </div>
@@ -362,7 +367,7 @@
                                 <i class="fal fa-puzzle-piece fa-2x text-white icon-element"></i>
                             </div>
                         </div>
-                        <h3 class="mb-4 text-uppercase f-22 text-light letter-spacing_2">Problem Solvers</h3>
+                        <h3 class="mb-4 text-uppercase f-22 text-light letter-spacing_2">Pro2lem Solvers</h3>
                         <div class="d-flex justify-content-center">
                             <p class="text-light w-lg-50" >Examining your workflow and solving your issues with hardware, software and support</p>
                         </div>
@@ -376,7 +381,7 @@
                                 <i class="fal fa-comments-alt fa-2x text-white icon-element"></i>
                             </div>
                         </div>
-                        <h3 class="mb-4 text-uppercase f-22 text-light letter-spacing_2">Customer Support</h3>
+                        <h3 class="mb-4 text-uppercase f-22 text-light letter-spacing_2">Cus2omer Support</h3>
                         <div class="d-flex justify-content-center">
                             <p class="text-light w-lg-50" >Our team provides professional and reliable technical support for your organization</p>
                         </div>
@@ -395,7 +400,7 @@
                 <div class="col-lg-12">
                     <div class="home-title text-center">
                         <div class="d-flex justify-content-center">
-                            <h2 class="home-title-title letter-spacing_4 text-uppercase highlight">Meet Muskwa</h2>
+                            <h2 class=" letter-spacing_2 text-uppercase highlight">Meet Muskwa</h2>
                         </div>
                         <p class="home-title-desc text-muted mt-4 mx-4">Pellentesque habitant morbi tristique senectus malesuada fames turpis egestas duis dignissim finibus commodo nibh malesuada sollis diam. Pellentesque habitant morbi tristique senectus malesuada fames turpis egestas duis dignissim finibus commodo nibh malesuada sollis diam.</p>
                     </div>
@@ -403,7 +408,7 @@
             </div>
 
             <div class="row d-flex mt-5 pt-3">
-                <div class="col-lg-6">
+                <div class="col-lg-6 mb-4">
                     <div class="">
                         <img src="images/screenshots/screenshot-7.jpg" class="img-fluid" alt="">
                     </div>
@@ -481,7 +486,7 @@
                 <div class="col-lg-12">
                     <div class="home-title text-center mx-4">
                         <div class="d-flex justify-content-center">
-                            <h2 class="home-title-title letter-spacing_4 text-uppercase highlight">In the News</h2>
+                            <h2 class=" letter-spacing_2 text-uppercase highlight">In the News</h2>
                         </div>
                         <p class="home-title-desc text-muted mt-4">Pellentesque habitant morbi tristique senectus malesuada fames turpis egestas duis dignissim finibus commodo nibh malesuada sollis diam.</p>
                     </div>
@@ -564,41 +569,39 @@
         <div class="container-fluid">
             <div class="row justify-content-center mx-4">
                 <div class="col-lg-12 position-relative">
-                    <div class="home-title text-center mx-4">
+                    <div class="home-title text-center mx-lg-4">
                         <div class="d-flex justify-content-center">
-                            <div class="d-flex justify-content-center position-relative">
-                                <h2 class="home-title-title letter-spacing_4 text-uppercase highlight">Industry &amp; Community</h2>
-                            </div>
+                            <h2 class=" letter-spacing_2 text-uppercase highlight">Industry &amp; Community</h2>
                         </div>
                     </div>
 
                     <div class="swiper-container swiper2">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide industry-slide">
                                 <a href="#">
                                     <img src="images/Artboard/Industry & Community/fplogo_rain.png">
                                 </a>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide industry-slide">
                                 <a href="#">
                                     <img src="images/Artboard/Industry & Community/logo_globalnews.png">
                                 </a>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide industry-slide">
                                 <a href="#">
                                     <img src="images/Artboard/Industry & Community/Syncrude.png">
                                 </a>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide industry-slide">
                                 <a href="#">
                                     <img src="images/Artboard/Industry & Community/viu_logo_opengraph.png">
                                 </a>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide industry-slide">
                                 <a href="#">
                                     <img src="images/Artboard/Industry & Community/xa-wbank.png">
                                 </a>
@@ -615,24 +618,24 @@
     <!-- START FOOTER -->
     <footer class="section-footer bg-softwere-footer">
         <div class="row mx-4">
-            <div class="col-lg-12 d-flex align-items-end mt-6">
-                <div class="col-lg-4 pr-0 d-flex align-items-end">
+            <div class="col-lg-12 d-flex flex-column flex-lg-row align-items-end mt-6">
+                <div class="col-lg-4 pr-0 d-flex flex-column flex-lg-row align-items-lg-end mb-4">
                     <img src="images/Artboard/muskwa-logo.png">
                     <span class="mb-2 text-light">/ Computer Sciences Corp.</span>
                 </div>
-                <ul class="col-lg-8 d-flex justify-content-between mb-2 text-uppercase footer-nav footer-list">
-                    <li><a href="">Networking</a></li>
-                    <li><a href="">Security</a></li>
-                    <li><a href="">Cloud Services</a></li>
-                    <li><a href="">Asset Management</a></li>
-                    <li><a href="">Support &amp; Recovery</a></li>
+                <ul class="col-lg-8 d-flex flex-column flex-lg-row justify-content-between mb-2 text-uppercase footer-nav footer-list">
+                    <li class="mb-2"><a href="">Networking</a></li>
+                    <li class="mb-2"><a href="">Security</a></li>
+                    <li class="mb-2"><a href="">Cloud Services</a></li>
+                    <li class="mb-2"><a href="">Asset Management</a></li>
+                    <li class="mb-2"><a href="">Support &amp; Recovery</a></li>
                 </ul>
             </div>
         </div>
         <div class="row mx-4">
 
             <div class="col-lg-4 pr-0">
-                <div class="d-flex flex-column softwere-footer p-4 mt-4">
+                <div class="d-flex flex-column softwere-footer p-lg-4 mt-lg-4">
 
                     <p class="text-muted my-4 f-15 line-height_1_6">Pellentesque habitant morbi tristique senectus malesuada fames turpis egestas duis dignissim finibus commodo nibh malesuada sollis diam.</p>
                     <a href="tel:780-880-2779" class="font-weight-bold">780-880-2779</a>
@@ -651,15 +654,15 @@
 
             <div class="col-lg-8 px-0  d-flex flex-column">
 
-                <div class="d-flex">
+                <div class="d-flex flex-wrap">
 
-                    <div class="col-lg-6 px-0">
+                    <div class="col-12 col-lg-6 px-lg-0">
                         <div class="softwere-footer pt-4 mt-4">
                             <div class="softwere-footer-icon">
                                 <i class="pe-7s-call text-white"></i>
                             </div>
     
-                            <h4 class="text-uppercase f-15 letter-spacing_4 text-white my-4 text-muted">Helpful Links</h4>
+                            <h4 class="text-uppercase f-15 letter-spacing_2 text-white my-4 text-muted">Helpful Links</h4>
                             <hr class="mr-5 border-muted">
                             <ul class=" footer-list mt-4">
                                 <li class="mb-2"><a href="#">COVID-19 Policy</a></li>
@@ -672,13 +675,10 @@
                         </div>
                     </div>
     
-                    <div class="col-lg-6">
-                        <div class="softwere-footer p-4 mt-4">
-                            <div class="softwere-footer-icon">
-                                <i class="pe-7s-comment text-white"></i>
-                            </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="softwere-footer p-lg-4 mt-4">
     
-                            <h4 class="text-uppercase f-15 letter-spacing_4 text-muted my-4">Legal</h4>
+                            <h4 class="text-uppercase f-15 letter-spacing_2 text-muted my-4">Legal</h4>
                             <hr class="text-left mr-6 border-muted">
                             <ul class=" footer-list mt-4">
                                 <li class="mb-2"><a href="#">Terms of Use</a></li>
@@ -687,13 +687,13 @@
     
                         </div>
                     </div>
-        </div>
                 </div>
+            </div>
         </div>
 
-        <div class="row mt-4 py-4 mx-4 px-3">
+        <div class="row mt-4 py-4 mx-4 px-lg-3">
             <div class="col-lg-12">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex flex-column flex-lg-row justify-content-between">
                     <p class="copy-rights text-muted">© 2021 Muskwa Computer Sciences Corp. All Rights Reserved</p>
                     <p class="text-muted">Kelowna Web Design and Marketing by twincreekmedia</p>
                 </div>

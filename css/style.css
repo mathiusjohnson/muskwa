@@ -153,6 +153,7 @@ button:focus {
     display: block;
     background: linear-gradient(to right, #efc169 50%, transparent 50%);
     height: 16px;
+    line-height: 0.5;
     background-size: 200% 50%;
     background-position: right bottom;
     transition: all .5s ease-out;
@@ -3005,6 +3006,8 @@ textarea.form-control {
 }
 
 
+
+
 /*=============================
  13.   APP-CSS
 ===============================*/
@@ -3405,6 +3408,16 @@ textarea.form-control {
 @media (min-width: 200px) and (max-width: 991px) {
     body {
         font-size: 16px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .highlight {
+        height: 12px;
+        line-height: 0.3;
     }
     .navbar-custom {
         margin-top: 0px;

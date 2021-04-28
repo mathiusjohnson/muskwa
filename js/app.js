@@ -213,8 +213,10 @@ var swiper = new Swiper('.swiper1', {
     preventClicks: false,
     preventClicksPropagation: false,
     lazyLoadingInPrevNext: true,
-    nextButton: '.swiper-arrow-right',
-    prevButton: '.swiper-arrow-left',
+    navigation: {
+        nextEl: '.swiper-arrow-right',
+        prevEl: '.swiper-arrow-left',
+    },
     coverflow: {
         rotate: 0,
         depth: 200,
@@ -222,7 +224,6 @@ var swiper = new Swiper('.swiper1', {
         slideShadows: false,
         slidesPerView: 3,
     },
-
 })
 
 var industrySwiper = new Swiper('.swiper2', {
@@ -239,11 +240,16 @@ var industrySwiper = new Swiper('.swiper2', {
         },
         720: {
           slidesPerView: 2,
+          autoplay: {
+            delay: 600,
+        },
         },
 
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 2
+        200: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          autoplay: false,
+          centeredSlides: true,
         }
     },
     initialSlide: 1,
@@ -253,8 +259,6 @@ var industrySwiper = new Swiper('.swiper2', {
     preventClicks: false,
     preventClicksPropagation: false,
     lazyLoadingInPrevNext: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
     coverflow: {
         rotate: 0,
         depth: 200,
@@ -263,7 +267,7 @@ var industrySwiper = new Swiper('.swiper2', {
         slidesPerView: 3,
     },
     autoplay: {
-        delay: 5000,
+        delay: 600,
     },
     speed: 2800,
 
@@ -299,3 +303,5 @@ $(window).scroll(function () {
         }
     });
 });
+
+  

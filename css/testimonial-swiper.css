@@ -60,6 +60,7 @@
   font-size: 2rem;
 }
 
+/* SOFTWERE INDUSTRY SLIDER */
 
 @media (min-width: 200px) and (max-width: 991px) {
   .swiper-slide {
@@ -83,4 +84,9 @@
     right: 20px;
     font-size: 1.5rem;
   }
+
+  .industry-slide img {
+    width: 90%;
+  }
+
 }
