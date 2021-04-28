@@ -18,10 +18,13 @@ $(window).scroll(function() {
 // SmoothLink
 $('.navbar-nav a, .mouse-down a').on('click', function(event) {
     var $anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - 0
-    }, 1500, 'easeInOutExpo');
-    event.preventDefault();
+    if ($anchor.length) {
+        console.log('checks out');
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - 0
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    }
 });
 
 // scrollspy
@@ -272,19 +275,6 @@ var industrySwiper = new Swiper('.swiper2', {
     speed: 2800,
 
 })
-
-
-var i = 0;
-var txt = 'Smarter Solutions'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("solutions").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
 
 function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();

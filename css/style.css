@@ -526,6 +526,9 @@ button:focus {
 /******************
 2. NAVBAR
 *******************/
+.navbar-collapse.in {
+    display: block !important;
+}
 
 .navbar-custom {
     padding: 20px 0px;
