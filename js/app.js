@@ -289,13 +289,16 @@ function isScrolledIntoView(elem) {
 $(window).scroll(function () {
     $('.highlight').each(function () {
         if (isScrolledIntoView(this) === true) {
-            $(this).addClass('highlight-transition');
+            setTimeout(() => {
+                $(this).addClass('highlight-transition');
+            }, 500);
         }
     });
     $('.highlight-h2').each(function () {
         if (isScrolledIntoView(this) === true) {
-            $(this).addClass('highlight-transition');
-        }
+            setTimeout(() => {
+                $(this).addClass('highlight-transition');
+            }, 500);        }
     });
 });
 
