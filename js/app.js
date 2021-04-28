@@ -292,6 +292,11 @@ $(window).scroll(function () {
             $(this).addClass('highlight-transition');
         }
     });
+    $('.highlight-h2').each(function () {
+        if (isScrolledIntoView(this) === true) {
+            $(this).addClass('highlight-transition');
+        }
+    });
 });
 
   

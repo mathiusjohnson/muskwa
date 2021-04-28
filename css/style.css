@@ -40,6 +40,10 @@ h6 {
     font-weight: 600;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 a {
     color: white;
     text-decoration: none !important;
@@ -154,6 +158,16 @@ button:focus {
     background: linear-gradient(to right, #efc169 50%, transparent 50%);
     height: 16px;
     line-height: 0.5;
+    background-size: 200% 50%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.highlight-h2 {
+    display: block;
+    background: linear-gradient(to right, #efc169 50%, transparent 50%);
+    height: 24px;
+    line-height: 0.3;
     background-size: 200% 50%;
     background-position: right bottom;
     transition: all .5s ease-out;
@@ -3413,14 +3427,18 @@ textarea.form-control {
         font-size: 16px;
     }
     h1 {
-        font-size: 24px;
+        font-size: 2rem;
     }
     h2 {
-        font-size: 20px;
+        font-size: 1.5rem;
     }
     .highlight {
         height: 12px;
         line-height: 0.3;
+    }
+    .highlight-h2 {
+        height: 12px;
+        line-height: 0.1;
     }
     .navbar-custom {
         margin-top: 0px;
