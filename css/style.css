@@ -3563,6 +3563,12 @@ textarea.form-control {
     }
 }
 
+@media (min-width: 660px) and (max-width: 991px) {
+    section#scheduleconsultation {
+        padding-top: 140px;
+    }
+}
+
 @media (max-width: 320px) {
     #agency-owl-demo .owl-prev i {
         display: none;
@@ -3674,7 +3680,8 @@ textarea.form-control {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
+
     .w-lg-50 {
         width: 50%;
     }
